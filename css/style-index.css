@@ -1,0 +1,281 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    
+}
+
+
+/* Navbar */
+
+.bg-body-tertiary {
+    background-color: rgb(57, 103, 183) !important;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-toggle-icon {
+    /* If navbar-toggle-icon is a class for your toggle icon, adjust styles here */
+    justify-content: flex-end !important;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 10px;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    transition: all 0.3s ease-in;
+    color: black;
+}
+
+.active {
+    text-decoration: none;
+    border-color: white;
+    border-style: dotted;
+    border-width: 2px;
+    color: white;
+}
+
+/* Body content here */
+body {
+    margin-top: 125px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.about-company {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* Carousel Items */
+
+.carousel-item {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 50vw;
+    /* height: 70vh; */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgb(24,56,112);
+    padding: 1%;
+}
+
+.carousel-item:hover {
+    animation-play-state: paused;
+}
+
+/* Client Logos */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+  
+.logos {
+    overflow: hidden;
+    padding: 7.5vh 0;
+    background: rgb(111, 177, 232);
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 10vh;
+    margin: 0 4vw;
+}
+
+
+/* Testimonials grid */
+.grid-container {
+    padding: 2%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-columns: 14vw 4vw;
+    grid-template-rows: 60vh 7.5vh 7.5vh;
+    justify-content: center;
+    background-color: rgb(24,56,112);
+    width: 30vw;
+    margin: auto;
+}
+
+.grid-items {
+    background-color: yellow;
+}
+
+.review {
+    margin-bottom: 2vh;
+    grid-column: span 3;
+}
+
+.name {
+    grid-column: 1;
+    margin-bottom: 2.5vh;
+}
+
+.photo {
+    grid-column: 3;
+    grid-row: 2;
+    width: 7.5vw;
+    height: 12.5vh;
+}
+
+/* Founders content and boxes */
+.founders-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+}
+
+.founders-box {
+    display: grid;
+    gap: 10px;
+    grid-row: auto;
+    grid-column: auto;
+    width: 35vw;
+    height: 70vw;
+    position: relative;
+    perspective: 100vw; /* Add perspective for 3D effect */
+}
+
+.founders-box:hover .from-founder {
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.from-founder {
+    background-color: skyblue;
+    grid-row: span 1;
+    grid-column: span 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    color: black;
+    opacity: 0;
+}
+
+.founder-name {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: yellow;
+    height: 5vh;
+}
+
+.founder-connect {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.icons-img {
+    width: 32px;
+    height: 32px;
+}
+
+.profile-img {
+    width: 35vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+.footer {
+    padding-top: 1.25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    background-color: rgb(57, 103, 183) !important;
+}
+
+.footer h5 {
+    color: black;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.75) !important;
+    transition-duration: 0.5s;
+}
+
+.list-inline-item {
+    margin-right: 10px;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 50%;
+}
