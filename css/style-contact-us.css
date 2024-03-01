@@ -1,0 +1,115 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    
+}
+
+body {
+    background-color: #f1faff;
+    margin-top: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    @media (max-width: 800px) {
+        margin-top: 30%;
+    }
+}
+
+.icons-img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Navbar */
+
+.bg-body-tertiary {
+    background-color: rgb(57, 103, 183) !important;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-toggle-icon {
+    /* If navbar-toggle-icon is a class for your toggle icon, adjust styles here */
+    justify-content: flex-end !important;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 10px;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    transition: all 0.3s ease-in;
+    color: black;
+}
+
+.active {
+    text-decoration: none;
+    border-color: white;
+    border-style: dotted;
+    border-width: 2px;
+    color: white;
+}
+
+/* Exclusive Page Content here */
+
+
+
+/* Footer */
+.footer {
+    padding-top: 1.25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    background-color: rgb(57, 103, 183) !important;
+}
+
+.footer h5 {
+    color: black;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,0.75) !important;
+    transition-duration: 0.5s;
+}
+
+.list-inline-item {
+    margin-right: 10px;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 50%;
+}
