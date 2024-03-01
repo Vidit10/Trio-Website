@@ -1,55 +1,267 @@
 <!DOCTYPE html>
 <html lang="en-in">
-    <header>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HOME | Trio - The HVAC Company
         </title>
-        <link rel="stylesheet" href="css/style-index.css">
         <link rel="icon" type="img" href="resources/trio-logo.jpg">
-        <script src="js/scipt-index.js"></script>
-        <a href="index.html"><img src="resources/trio-logo.jpg" id="top-heading-logo"></a>
-        <h1 id="top-heading-name">Trio - The HVAC Company</h1>
-        <nav class="topnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="products-main.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="about-us.html">About Us</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="blogs-content.html">Blogs</a>
-        </nav>
-    </header>
-    <body>
-        <p>Sample text, some intro about the company here in a few lines. <br>We are an HVAC company dealing in this field of HVAC from the past 8 years and having a combined experience of more than 80 years.</p>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <img src="resources/index/ac-front.jpg" alt="Image 1">
-                    <a href="index.html" class="slide-button">Page 1</a>
-                </div>
-                <div class="slide">
-                    <img src="resources/index/ac-in-room.jpg" alt="Image 2">
-                    <a href="products-main.html" class="slide-button">Page 2</a>
-                </div>
-                <div class="slide">
-                    <img src="resources/index/ac-open-front.jpg" alt="Image 3">
-                    <a href="contact-us.html" class="slide-button">Page 3</a>
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-            
-            <div class="controls">
-                <button class="prev-button">&lt;</button>
-                <div class="dots-container">
-                    <!-- Dots will be added dynamically using JavaScript -->
-                </div>
-                <button class="next-button">&gt;</button>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    
+        <link rel="stylesheet" href="css/style-index.css">
+    </head>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="resources/trio-logo.jpg" alt="Trio Logo" width="20%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bootstrap-trial.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webpages/products-main.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webpages/services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webpages/about-us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webpages/contact-us.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webpages/blogs-content.html">BLOGS</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <body>
+        <section class="about-company">
+            <h1>
+                About the Company:
+            </h1>
+            Trio - the HVAC Company previously known as Trio Home Appliances, was founded in 2016. It's primary motive was/is to work in the HVAC domain and provide a standardized quality service for all HVAC verticals. More sample content here.
     
-        <footer>
-            &copy; Vidit Parikh 2024
-        </footer>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="resources/sample/corporate.png" class="d-block w-100" alt="Corporate HVAC Solutions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="webpages/products-main.html"><button type="button" class="btn btn-dark">Product Range</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="resources/sample/industries.png" class="d-block w-100" alt="Industries HVAC Solutions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="webpages/about-us.html"><button type="button" class="btn btn-dark">About Us</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="resources/sample/it-hub.png" class="d-block w-100" alt="IT Hub HVAC Solutions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="webpages/services.html"><button type="button" class="btn btn-dark">Services</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="resources/sample/residential.png" class="d-block w-100" alt="Residential HVAC Solutions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="webpages/contact-us.html"><button type="button" class="btn btn-dark">Contact Us</button></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section class="clients">
+            <h1>
+                Our Esteem Clientele
+            </h1>
+            <div class="logos">
+              <div class="logos-slide">
+                <img src="resources/comp-logos/logo-adc.png" alt="adc"/>
+                <img src="resources/comp-logos/logo-ama.png" alt="ama"/>
+                <img src="resources/comp-logos/logo-befree.png" alt="befree"/>
+                <img src="resources/comp-logos/logo-cera.png" alt="cera"/>
+                <img src="resources/comp-logos/logo-city-sq.png" alt="city square">
+                <img src="resources/comp-logos/logo-gift-city.png" alt="gift-city">
+                <img src="resources/comp-logos/logo-gpe.png" alt="GPE">
+                <img src="resources/comp-logos/logo-gvk.jpg" alt="GVK">
+                <img src="resources/comp-logos/logo-harsha.png" alt="harsha">
+                <img src="resources/comp-logos/logo-ibcc.png" alt="ibcc">
+                <img src="resources/comp-logos/logo-indian-rc.jpg" alt="indian rc">
+                <img src="resources/comp-logos/logo-innovision.jpg" alt="innovision">
+                <img src="resources/comp-logos/logo-jch.png" alt="JCH">
+                <img src="resources/comp-logos/logo-kdcc.png" alt="KDCC">
+                <img src="resources/comp-logos/logo-lp.png" alt="LP">
+              </div>
+          </div>
+          <br>
+          <div class="logos">
+              <div class="logos-slide">
+                  <img src="resources/comp-logos/logo-mafatlal.png" alt="Mafatlal">
+                  <img src="resources/comp-logos/logo-manyavar.png" alt="manyavar">
+                  <img src="resources/comp-logos/logo-nanliu.jpg" alt="Nanliu">
+                  <img src="resources/comp-logos/logo-nexcure.png" alt="nexcure">
+                  <img src="resources/comp-logos/logo-oyo.png" alt="Oyo">
+                  <img src="resources/comp-logos/logo-patang.png" alt="Patang">
+                  <img src="resources/comp-logos/logo-pdeu.png" alt="PDEU">
+                  <img src="resources/comp-logos/logo-qatar.png" alt="Qatar">
+                  <img src="resources/comp-logos/logo-ramdoot.jpg" alt="Ramdoot">
+                  <img src="resources/comp-logos/logo-sandvik.png" alt="Sandvik">
+                  <img src="resources/comp-logos/logo-sihl.jpg" alt="SIHL">
+                  <img src="resources/comp-logos/logo-torrent.png" alt="Torrent">
+                  <img src="resources/comp-logos/logo-v-mart.png" alt="V Mart">
+                  <img src="resources/comp-logos/logo-varuna.png" alt="Varuna">
+                  <img src="resources/comp-logos/logo-vh.png" alt="Van Huesen">
+                  <img src="resources/comp-logos/logo-via.jpg" alt="VIA">
+                  <img src="resources/comp-logos/logo-zydus.jpg" alt="Zydus">
+              </div>
+          </div>
+            
+    
+        </section>
+
+
+        <section class="testimonials">
+            <h1 id="testimonials-heading">
+                Testimonials
+            </h1>
+            <div class="grid-container">
+                <div class="grid-items review">
+                    Review
+                </div>
+                <div class="grid-items name">
+                    Name
+                </div>
+                <div class="grid-items name">
+                    Designation
+                </div>
+                <div class="grid-items photo">
+                    Pics
+                </div>
+            </div>
+            <!-- Addition of next and previous button left -->
+        </section>
+
+        <section class="founders">
+            <h1>
+                From the Founder:
+            </h1>
+            <div class="founders-content">
+                <div class="founders-box hover-effect">
+                  <img src="resources/founder/profile-jignesh.jpg" alt="Jignesh Parikh Image" class="profile-img">
+                  <div class="from-founder">
+                    I completed my B.E. in Mechanical from L D College of Engineering in 2000. I have more than 20 Years of experience in the HVAC field. I have experience of 14 Years in Design & Development in Johnson control HITACHI. I represented HITACHI as a core committee member to make and finalize the star rating standard of inverter AC in India in BEE. I am Co-founder of Trio – The HVAC Company, since Mar 2016. We are the HVAC Contractor and provide Air conditioning services across India. I have been a Member of the ISHRAE Ahmedabad chapter since 2016.
+                  </div>
+                  <div class="founder-name">
+                    Mr. Jignesh P Parikh
+                  </div>
+                  <div class="founder-name">
+                    Co-Founder (2016)
+                  </div>
+                  <div class="founder-name">
+                    CEO / Director
+                  </div>
+                  <div class="founder-connect">
+                    <a href="https://www.linkedin.com/in/jignesh-parikh-318599261"><img src="resources/icons/linkedin.png" alt="LinkedIn" class="icons-img"></a>
+                    <a href="jparikh21@gmail.com"><img src="resources/icons/mail.png" alt="Mail" class="icons-img"></a>
+                  </div>
+                </div>
+                <div class="founders-box hover-effect">
+                  <img src="resources/founder/profile-jayesh.jpg" alt="Jayesh Sutariya Image" class="profile-img">
+                  <div class="from-founder">
+                    I completed my B.E Mechanical from Nirma Institute of Technology in the year 2001. I have more than 20 Years of experience in the HVAC field and experience of 18 Years in Design & Development as well as the New Product Recognition department in Johnson controls-HITACHI. I was the chief engineer for the establishment of the Global Development Centre at Hitachi worth Rs. 156 Cr. Also, worked in the Design Department of Prashad GWK Pvt Ltd, a manufacturer of industrial chillers. I am a certified auditor for ISO 9001, ISO 14001, ISO 18001 and ISO/IEC 17025. I have been the Co-founder of Trio – The HVAC Company, since Nov 2020. We are the HVAC Contractor that provides Air conditioning services across India. I have been a Member of the ISHRAE Ahmedabad chapter since 2021.
+                  </div>
+                  <div class="founder-name">
+                    Mr. Jayesh Sutariya
+                  </div>
+                  <div class="founder-name">
+                    Co-Founder (2020)
+                  </div>
+                  <div class="founder-name">
+                    CEO / Director
+                  </div>
+                  <div class="founder-connect">
+                    <a href="https://www.linkedin.com/in/jayesh-sutariya-337832260/"><img src="resources/icons/linkedin.png" alt="LinkedIn" class="icons-img"></a>
+                    <a href=""><img src="resources/icons/mail.png" alt="Mail" class="icons-img"></a>
+                  </div>
+                </div>
+              </div>
+              
+        </section>
+        <section class="vision">
+            <h1>
+                Vision:
+            </h1>
+            <div class="vision-lines">
+                It comes here.
+            </div>
+        </section>
+        <footer class="footer bg-dark text-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>Sales</h5>
+                  <b>Email:</b> <a href="mailto:triosales2016@gmail.com">triosales2016@gmail.com</a><br>
+                  <b>Phone:</b> <a href="tel:+917574853200">+91 75748 53200</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Service</h5>
+                    <b>Email:</b> <a href="mailto:triohomeappliances@rediffmail.com">triohomeappliances@rediffmail.com</a><br>
+                    <b>Phone:</b> <a href="tel:+917574853191">+91 75748 53191</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Office</h5>
+                        <a href="https://maps.app.goo.gl/pX9hNFYom5ctUPCEA" class="footer-links"><address>Trio - The HVAC Company <br>
+                            209, 2nd Floor, Addore Aspire, Opp. Janhvi<br>
+                             Restaurant, Nr. Old Passport office,<br>
+                            University Road, Ahmedabad - 380015<br>
+                            (Click for Google Maps)
+                        </address></a>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Service Center</h5>
+                    <a href="https://maps.app.goo.gl/PDmaBzfiZkYCMVyv5" class="footer-links"><address>Trio - The HVAC Company <br>
+                        Gayatri Sadan, Jagabhai Park Society, <br>
+                        Near H.P. Petrol Pump Lane, <br>
+                        Rambaug, Maninagar - 380008 <br>   
+                        (Click for Google Maps)              
+                        </address></a>
+                  </div>
+                <div class="col-md-4">
+                  <h5>Follow Us</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/trioacamd"><img class="icons-img" src="resources/icons/facebook.png" alt="Facebook"></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/trio_the.hvac.company"><img class="icons-img" src="resources/icons/instagram.png" alt="Instagram"></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/trio-hvac/"><img class="icons-img" src="resources/icons/linkedin.png" alt="LinkedIn"></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/@triohomeappliances7772"><img class="icons-img" src="resources/icons/youtube.png" alt="YouTube"></a></li>                
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p id="copyright">&copy; Vidit Parikh 2024</p>
+          </footer>
+        <script src="js/scipt-index.js"></script>
     </body>
 </html>
