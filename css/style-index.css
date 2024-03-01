@@ -3,6 +3,20 @@ html {
     
 }
 
+body {
+    background-color: #f1faff;
+    margin-top: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    @media (max-width: 800px) {
+        margin-top: 30%;
+    }
+}
+
+.icons-img {
+    width: 32px;
+    height: 32px;
+}
+
 
 /* Navbar */
 
@@ -66,10 +80,7 @@ html {
 }
 
 /* Body content here */
-body {
-    margin-top: 125px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
+
 
 .about-company {
     margin-left: 1%;
@@ -181,34 +192,47 @@ body {
     height: 12.5vh;
 }
 
+@media (max-width: 800px) {
+    .grid-container { 
+      width: 80vw; 
+    } 
+    .review { 
+      width: 70vw; 
+      margin-top: 2vh; 
+    } 
+    .name { 
+      width: 45vw; 
+    } 
+    .photo { 
+      width: 20vw; 
+      grid-column: 3; /* Important: Allow automatic placement */
+      grid-row: 2 / span 2;    /* Important: Allow automatic placement */
+      margin: 0;         /* Optional: Reset any default margins */
+      margin-left: 32vw;
+    } 
+  } 
+  
+
 /* Founders content and boxes */
 .founders-content {
     display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    margin: auto;
 }
 
-.founders-box {
-    display: grid;
-    gap: 10px;
-    grid-row: auto;
-    grid-column: auto;
-    width: 35vw;
-    height: 70vw;
+.overlay-box {
     position: relative;
-    perspective: 100vw; /* Add perspective for 3D effect */
-}
-
-.founders-box:hover .from-founder {
-    transform: rotateY(0deg);
-    opacity: 1;
-}
-
-.from-founder {
-    background-color: skyblue;
-    grid-row: span 1;
-    grid-column: span 2;
+    width: 30vw; /* Set the width of your box */
+    height: 70vh; /* Set the height of your box */
+    margin: 5vh auto; /* Adjust margin as needed */
+    overflow: hidden;
+  }
+  
+  .overlay-box img {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire box */
+  }
+  
+  .overlay-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -216,37 +240,52 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transform: rotateY(180deg);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    color: black;
-    opacity: 0;
+    align-items: center;
+    color: #fff; /* Text color */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+    transition: background 0.7s ease-in-out; /* Smooth transition for the background */
+    opacity: 0; /* Initially hide the content */
+  }
+
+  .founder-written {
+    padding: 10%;
+    font-size: small;
+  }
+  
+  .overlay-content h2,
+  .overlay-content p {
+    margin: 0;
+  }
+  
+  .overlay-box:hover .overlay-content {
+    opacity: 1; /* Show the content on hover */
+    background: rgba(0, 0, 0, 0.6); /* Adjust the background color on hover */
+  }
+
+.founder-data {
+    display: flex;
 }
 
-.founder-name {
-    grid-row: span 2;
-    grid-column: span 3;
-    background-color: yellow;
-    height: 5vh;
+.founder-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.founder-connect {
-    grid-row: span 1;
-    grid-column: span 1;
+.founder-icons {
+    text-align: center;
 }
-
-.icons-img {
-    width: 32px;
-    height: 32px;
+  
+@media (max-width: 800px) {
+    .founders-content {
+        flex-direction: column;
+    }
+    .overlay-box {
+        width: 80vw;
+    }
 }
-
-.profile-img {
-    width: 35vw;
-    height: 70vh;
-    object-fit: cover;
-}
-
 
 
 /* Footer */
