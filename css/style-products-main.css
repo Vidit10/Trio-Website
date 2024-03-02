@@ -7,9 +7,44 @@ body {
     background-color: #f1faff;
     margin-top: 10%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         margin-top: 30%;
+        .breadcrumb {
+            opacity: 0;
+        }
     }
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 20px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgba(85, 76, 76, 0.511);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 5px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: rgb(245, 241, 241);
+    /* Add a dark-grey background on hover */
 }
 
 .icons-img {
@@ -80,7 +115,59 @@ body {
 }
 
 /* Exclusive Page Content here */
+.residential-flex {
+    display: flex;
+    justify-content: space-around;
+}
 
+.outer-box {
+    width: 40%;
+    background-color: #fffefc;
+    border: 1px black solid;
+
+}
+
+.model-img {
+    width: 90%;
+    margin: 5%;
+}
+
+.model-content {
+    margin-left: 15%;
+}
+
+.btn-all-prods {
+    text-decoration: none;
+    background-color: rgb(168,184,216);
+    color: black;
+    align-self: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.btn-all-prods:hover {
+    background-color: rgba(168,184,216,0.5);
+    transition: 0.4s ease;
+    color: black;
+}
+
+.btn-new-page {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.btn-new-page:hover {
+    background-color: rgba(255, 255, 255, 0.564);
+    transition: 0.5s ease;
+    color: black;
+}
 
 
 /* Footer */
